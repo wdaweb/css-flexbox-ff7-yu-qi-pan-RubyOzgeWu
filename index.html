@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <style>
+        body {
+            width: 100px;
+            height: 100vh;
+            background: url(./images/bg-full.jpg) center center/cover;
+            font-family: '微軟正黑體';
+        }
+
+        #container {
+            width: 1200px;
+            height: 600px;
+            border: 1px solid rgb(176, 174, 174);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .row {
+            width: 100%;
+            height: 100%;
+            /* background: lightblue; */
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+
+        .row .col {
+            width: 50%;
+            height: 100%;
+            /* border: 1px solid black; */
+        }
+
+        /* left */
+        .col.left {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url(./images/main.jpg) center center/cover;
+        }
+        .col.left img{
+            width: 25%;
+            margin-left: 38%;
+            margin-top: 15%;
+        }
+        .card1{
+            width: 70%;
+            color: white;
+            text-align: center;
+            margin: auto;
+        }
+
+
+
+
+
+        /* right */
+        .row-column {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+            /* border: 1px solid black; */
+        }
+
+        .col-column {
+            width: 100%;
+            height: 50%;
+            /* border: 1px solid black; */
+
+        }
+
+        /* up */
+        .col-column.up {
+            background: rgb(176, 174, 174);
+            position: relative;
+        }
+
+        .col-column img {
+            width: 245px;
+            object-fit: cover;
+            float: right;
+        }
+
+        .card.card2 {
+            position: absolute;
+            left: 5%;
+            top: 7%;
+        }
+
+        .card.card2 h1 {
+            padding-top: 5%;
+        }
+
+        /* down */
+        .col-column.down {
+            background:
+                url(./images/tifa.png) no-repeat left bottom/245px black;
+            color: white;
+            position: relative;
+        }
+
+        .card.card3 {
+            width: 60%;
+            position: absolute;
+            right: 5%;
+            top: 18%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="row">
+            <!-- left -->
+            <div class="col left">
+                <img src="./images/ps4-ff7.png" alt="">
+                <div class="card1">
+                    <h1>AVAILABLE NOW</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error et amet dolorem est facere,
+                        veritatis itaque nihil hic. Esse numquam quam nam deleniti sint iste debitis perspiciatis
+                        adipisci beatae omnis?ß</p>
+                </div>
+
+            </div>
+
+
+            <!-- right -->
+            <div class="col right">
+                <div class="row-column">
+                    <div class="col-column up">
+                        <div class="card card2">
+                            <img src="./images/cloud.png" alt="">
+                            <h1>Cloud</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eius quae magni iste
+                                necessitatibus libero minus reprehenderit officiis, nulla laborum, perferendis
+                                praesentium
+                                inventore possimus quaerat rem ea iure facilis laudantium! Lorem ipsum dolor sit amet
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-column down">
+                        <div class="card card3">
+                            <h1>Tifa</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab dolor doloribus, a
+                                perferendis quaerat molestiae blanditiis autem repellat quasi suscipit, voluptates
+                                voluptatem deleniti quam fugiat voluptatibus ea modi illum!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
