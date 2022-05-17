@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <p class="text">棋盤裡，車無輪，馬無疆，叫聲將軍提防提防</p>
+        <!-- 外框 -->
+        <div class="chessboard">
+                <!-- 棋盤 -->
+                <table border="1">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="line"><div class="line-box1"></div></td>
+                        <td class="line"><div class="line-box2"></div></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="8" class="river">
+                            <div class="river-box"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="line"><div class="line-box1"></div></td>
+                        <td class="line"><div class="line-box2"></div></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table> 
+
+                <!-- 黑棋 -->
+                <div class="chessboard-black">
+                    <div class="row row-2">
+                        <div class="chess"><div class="word"><p>車</p></div></div>
+                        <div class="chess"><div class="word"><p>馬</p></div></div>
+                        <div class="chess"><div class="word"><p>象</p></div></div>
+                        <div class="chess"><div class="word line-left"><p>士</p></div></div>
+                        <div class="chess"><div class="word"><p>將</p></div></div>
+                        <div class="chess"><div class="word line-right"><p>士</p></div></div>
+                        <div class="chess"><div class="word"><p>象</p></div></div>
+                        <div class="chess"><div class="word"><p>馬</p></div></div>
+                        <div class="chess"><div class="word"><p>車</p></div></div>
+                    </div>
+                    <div class="row row-1">
+                        <div class="chess"></div>
+                        <div class="chess"><div class="word"><p>包</p></div></div>
+                        <div class="chess"></div>
+                        <div class="chess"></div>
+                        <div class="chess"></div>
+                        <div class="chess"></div>
+                        <div class="chess"></div>
+                        <div class="chess"><div class="word"><p>包</p></div></div>
+                        <div class="chess"></div>
+                    </div>
+                    <div class="row row-1">
+                        <div class="chess"><div class="word"><p>卒</p></div></div>
+                        <div class="chess"></div>
+                        <div class="chess"><div class="word"><p>卒</p></div></div>
+                        <div class="chess"></div>
+                        <div class="chess"><div class="word"><p>卒</p></div></div>
+                        <div class="chess"></div>
+                        <div class="chess"><div class="word"><p>卒</p></div></div>
+                        <div class="chess"></div>
+                        <div class="chess"><div class="word"><p>卒</p></div></div>
+                    </div>
+                </div>
+
+                <!-- 白棋 -->
+                <div class="chessboard-white">
+                    <div class="row row-1">
+                        <div class="chess"><div class="word"><p>兵</p></div></div>
+                        <div class="chess"></div>
+                        <div class="chess"><div class="word"><p>兵</p></div></div>
+                        <div class="chess"></div>
+                        <div class="chess"><div class="word"><p>兵</p></div></div>
+                        <div class="chess"></div>
+                        <div class="chess"><div class="word"><p>兵</p></div></div>
+                        <div class="chess"></div>
+                        <div class="chess"><div class="word"><p>兵</p></div></div>
+                    </div>
+                    <div class="row row-1">
+                        <div class="chess"></div>
+                        <div class="chess"><div class="word"><p>炮</p></div></div>
+                        <div class="chess"></div>
+                        <div class="chess"></div>
+                        <div class="chess"></div>
+                        <div class="chess"></div>
+                        <div class="chess"></div>
+                        <div class="chess"><div class="word"><p>炮</p></div></div>
+                        <div class="chess"></div>
+                    </div>
+
+                    <div class="row row-2">
+                        <div class="chess"><div class="word"><p>俥</p></div></div>
+                        <div class="chess"><div class="word"><p>傌</p></div></div>
+                        <div class="chess"><div class="word"><p>相</p></div></div>
+                        <div class="chess"><div class="word"><p>仕</p></div></div>
+                        <div class="chess"><div class="word"><p>帥</p></div></div>
+                        <div class="chess"><div class="word"><p>仕</p></div></div>
+                        <div class="chess"><div class="word"><p>相</p></div></div>
+                        <div class="chess"><div class="word"><p>傌</p></div></div>
+                        <div class="chess"><div class="word"><p>俥</p></div></div>
+                    </div>
+                </div>
+            </div>
+        <p class="text">圖畫裡，龍不吟，虎不嘯，小小書僮可笑可笑</p>
+    </div>
+</body>
+
+</html>
