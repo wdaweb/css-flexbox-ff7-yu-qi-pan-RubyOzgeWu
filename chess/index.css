@@ -116,14 +116,7 @@ table{
     line-height: 0;
 }
 
-/* 斜線 */
-/* .line-left::before{
-    content: "";
-    width: 90px;
-    height: 90px;
-    border: 1px solid red;
-    position:absolute
-} */
+
 .line{
     position: relative;
 }
